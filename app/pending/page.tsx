@@ -26,13 +26,13 @@ export default async function PendingPage() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-ivory-cream px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen flex items-center justify-center bg-slate-950 px-4 sm:px-6 lg:px-8">
       <div className="max-w-md w-full">
-        <div className="bg-pearl-grey rounded-xl shadow-lg p-8 text-center">
+        <div className="bg-slate-900 rounded-xl shadow-lg p-8 text-center">
           {/* Hourglass Icon */}
-          <div className="mx-auto h-20 w-20 bg-soft-coral/20 rounded-full flex items-center justify-center mb-6">
+          <div className="mx-auto h-20 w-20 bg-white rounded-full flex items-center justify-center mb-6">
             <svg
-              className="h-10 w-10 text-soft-coral"
+              className="h-10 w-10 text-red-500"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -46,25 +46,25 @@ export default async function PendingPage() {
             </svg>
           </div>
 
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">
+          <h2 className="text-2xl font-bold text-white mb-4">
             Menunggu Persetujuan
           </h2>
 
-          <p className="text-gray-600 mb-6">
+          <p className="text-slate-200 mb-6">
             Akun Anda sedang menunggu persetujuan Admin.
             Anda akan mendapatkan akses setelah akun disetujui.
           </p>
 
-          <div className="bg-ivory-cream rounded-lg p-4 border border-gray-200">
-            <p className="text-sm text-gray-500 mb-2">Email:</p>
-            <p className="font-medium text-gray-900">{authUser.email}</p>
+          <div className="bg-slate-950 rounded-lg p-4 border border-gray-200">
+            <p className="text-sm text-white mb-2">Email:</p>
+            <p className="font-medium text-slate-200">{authUser.email}</p>
           </div>
 
           <div className="mt-6">
             <form action="/api/auth/signout" method="post">
               <button
                 type="submit"
-                className="text-calm-sky-blue hover:text-blue-700 text-sm font-medium"
+                className="text-red-500 hover:text-red-700 text-sm font-medium"
               >
                 Logout
               </button>
