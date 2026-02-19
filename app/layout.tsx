@@ -14,8 +14,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Payroll Portal",
-  description: "Employee payroll and earnings management portal",
+  title: "Shquille Game House",
+  description: "Since 2020, we've been mastering the art of MMORPG farming across multiple games.",
 };
 
 export default function RootLayout({
