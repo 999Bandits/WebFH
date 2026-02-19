@@ -18,7 +18,7 @@ export default function ArchiveGameButton({ gameName }: ArchiveGameButtonProps) 
     return (
         <button
             type="submit"
-            className="inline-flex items-center px-3 py-1.5 text-sm font-medium text-purple-600 hover:text-purple-700 hover:bg-purple-50 rounded-lg transition-colors"
+            className="inline-flex items-center px-3 py-1.5 text-sm font-medium text-red-600 hover:text-red-700 hover:bg-purple-50 rounded-lg transition-colors"
             onClick={handleClick}
         >
             <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
