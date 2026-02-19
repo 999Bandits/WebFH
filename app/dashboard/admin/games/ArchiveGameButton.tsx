@@ -9,9 +9,9 @@ export default function ArchiveGameButton({ gameName }: ArchiveGameButtonProps) 
         console.log("Archive button clicked for:", gameName);
         if (!confirm(`Apakah Anda yakin ingin menghapus "${gameName}"? Game ini tidak akan bisa dipilih lagi.`)) {
             e.preventDefault();
-            console.log("Archiving cancelled by user.");
+            console.log("Delete cancelled by user.");
         } else {
-            console.log("Archiving confirmed by user.");
+            console.log("Delete confirmed by user.");
         }
     };
 
