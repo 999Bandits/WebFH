@@ -7,7 +7,7 @@ interface ArchiveGameButtonProps {
 export default function ArchiveGameButton({ gameName }: ArchiveGameButtonProps) {
     const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
         console.log("Archive button clicked for:", gameName);
-        if (!confirm(`Apakah Anda yakin ingin mengarsipkan "${gameName}"? Game ini tidak akan bisa dipilih lagi.`)) {
+        if (!confirm(`Apakah Anda yakin ingin menghapus "${gameName}"? Game ini tidak akan bisa dipilih lagi.`)) {
             e.preventDefault();
             console.log("Archiving cancelled by user.");
         } else {
@@ -24,7 +24,7 @@ export default function ArchiveGameButton({ gameName }: ArchiveGameButtonProps) 
             <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
             </svg>
-            Arsip
+            Hapus
         </button>
     );
 }
