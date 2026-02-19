@@ -41,14 +41,14 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-ivory-cream px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen flex items-center justify-center bg-slate-950 px-4 sm:px-6 lg:px-8">
       <div className="max-w-md w-full">
-        <div className="bg-white rounded-xl shadow-lg p-8 text-center">
+        <div className="bg-slate-900 rounded-xl shadow-lg p-8 text-center">
           {/* Title */}
-          <h1 className="text-2xl font-bold text-gray-900 mb-2">
-            Selamat Datang di Payroll Portal
+          <h1 className="text-2xl font-bold text-white mb-2">
+            Shaquille Game House
           </h1>
-          <p className="text-gray-600 mb-8">
+          <p className="text-slate-200 mb-8">
             Silakan masuk untuk mengakses dashboard Anda
           </p>
 
@@ -63,7 +63,7 @@ export default function LoginPage() {
           <button
             onClick={handleGoogleSignIn}
             disabled={isLoading}
-            className="w-full flex items-center justify-center gap-3 px-4 py-3 border border-gray-300 rounded-lg shadow-sm bg-white text-gray-700 font-medium hover:bg-gray-50 hover:border-gray-400 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-full flex items-center justify-center gap-3 px-4 py-3 border border-gray-300 rounded-lg shadow-sm bg-slate-950 text-white font-medium hover:bg-slate-900 hover:border-gray-400 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {isLoading ? (
               <>
